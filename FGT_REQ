@@ -1,0 +1,101 @@
+WAN Subnet Info: 
+
+ 
+
+IP  : x.x.x.x 
+
+Net Mask : x.x.x.x 
+
+IP Gateway : x.x.x.x 
+
+ 
+
+(If Provided) 
+
+ISP DNS: x.x.x.x  
+
+ISP DNS: x.x.x.x 
+
+ 
+
+Midtown DNS: 10.1.10.10 
+
+Midtown DNS: 10.254.10.10 
+
+ 
+
+Local Subnet:10.x.x.0 255.255.255.0 
+
+Internal (Port1):10.x.x.1 255.255.255.0 
+
+ 
+
+DMZ 
+
+ 
+
+(Enable PING,HTTPS,SSH,FMG_ACCESS,RADIUS-ACCT,FTM,FORTITELEMETRY) 
+
+VPN_COR1 
+
+VPN_COR2 
+
+VPN_DR1 
+
+ 
+
+ 
+
+Wireless_private > Internal 1 
+
+Wireless_public 
+
+ 
+
+TFTP/SCP file copy to flash for Cisco 
+
+ 
+
+ 
+
+Upgrade the device to 6.0.4 
+
+Upgrade path 
+
+ 
+
+DHCP Options 
+
+Config system dhcp server 
+
+edit 1 
+
+set start-ipx.x.x.x 
+
+set end-ipx.x.x.x 
+
+ 
+
+edit 2 
+
+        set interface "dmz" 
+
+        config ip-range 
+
+            edit 1 
+
+                set start-ip x.x.x.x 
+
+                set end-ip x.x.x.x 
+
+            next 
+
+        end 
+
+ 
+
+CONF File > configuration 
+
+OUT File > firmware 
+
+ 
